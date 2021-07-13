@@ -6,12 +6,29 @@
         <link rel="stylesheet" href="css/buttonStyles.css">
     </head>
     <body>
-        <div id="sideBar" class="sideBar" >
-            <button onclick="closeSide()" class="sideClose">Close</button>
-            <h1 class="sideTitle">Sites</h1>
+        <!-- side bar  -->
+        <div hidden="true" id="sidebar" class="sideBar">
+            <div style="border-bottom: 2px solid; color: white;" onclick="closeSide()">
+                <img src="images/menu.png" alt="Close" class="sideOpen">
+                <h1 class="title">Sites</h1>
+            </div>
+            <!-- side bar items -->
+            <div>
+                <button onclick="goto('homo.html')" class="sideButtons">Sans</button>
+                <button onclick="goto('rainbow.html')" class="sideButtons">Rainbow</button>
+                <button onclick="goto('https://www.youtube.com/watch?v=dQw4w9WgXcQ')" class="sideButtons">Cool video</button>
+                <button onclick="goto('https://www.youtube.com/watch?v=FtutLA63Cp8')" class="sideButtons">Bad Apple</button>
+            </div>
         </div>
+
+
+        <!-- menu button  -->
+        <div>
+            <img src="images/menu.png" alt="Open Menu" class="sideOpen" onclick="openSide()" id="openSide">
+        </div>
+
         <div class="center" >
-            <button id="button" class="button" type="button" onclick="click_me()">Click Me</button>
+            <button id="button" class="button" type="button" onclick="clickMe()">Click Me</button>
         </div>
     </body>
 </html>

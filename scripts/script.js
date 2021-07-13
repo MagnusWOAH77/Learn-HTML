@@ -1,4 +1,4 @@
-function click_me(){
+function clickMe(){
     switch (parseInt(Math.random()*5)){
         case 0:
             window.alert("You are bad");
@@ -18,7 +18,22 @@ function click_me(){
     }  
 }
 
+function openSide() {
+    document.getElementById("sidebar").hidden = false;
+    document.getElementById("openSide").hidden = true;
+}
+
 function closeSide() {
-    var bar = document.getElementById("sideBar");
-    bar.hidden = true;
+    document.getElementById("sidebar").className = "sideClose";
+
+    setTimeout(() => {
+        document.getElementById("sidebar").hidden = true;
+        document.getElementById("openSide").hidden = false;
+        document.getElementById("sidebar").className = "sideBar";
+    }, 490);
+}
+
+function goto(url) {
+    closeSide();
+    window.open(url, "_blank");
 }
