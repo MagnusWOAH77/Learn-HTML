@@ -1,0 +1,99 @@
+body {
+	background: linear-gradient(to bottom right, #3f3f3f, #1f1f1f) ;
+    margin:0px;
+    padding:0px;
+}
+
+.container {
+    position: absolute;
+}
+
+.titleText {
+    color: white;
+    font-size: 100px;
+}
+
+.button {
+    width: 1000px;
+    height: 500px;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+    border-width: 0px;
+    font-family: Arial;
+    position: relative;
+    font-size: 100px;
+    z-index: 0;
+    animation: afterButton 0.25s 1;
+    
+}
+
+.button:hover {
+    background-color: #409143;
+    width: 990px;
+    height: 490px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    animation: button 0.25s 1;
+    z-index: 1;
+    
+}
+
+@keyframes afterButton {
+    0%{
+        width: 990px;
+        height: 490px;
+        background-color: #409143;
+    }
+}
+
+@keyframes button {
+    0%{
+        width: 1000px;
+        height: 500px;
+        background-color: #4CAF50;
+    }
+}
+
+.center {
+    margin: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.sideBar {
+    background: #3d3d3d;
+    height: 100%;
+    width: 15%;
+
+    animation: openAni 0.5s 1;
+}
+
+@keyframes openAni {
+    0% {
+        margin-left: -100%;
+    }
+}
+
+.sideTitle {
+    margin-top: 1px;
+    text-align: center;
+    font-family: arial;
+    border-top: solid white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sideClose {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border-width: 0px;
+}
+
+:hover.sideClose {
+    background-color: #505050;
+}
