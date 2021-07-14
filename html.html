@@ -7,7 +7,7 @@
     </head>
     <body>
         <!-- side bar  -->
-        <div hidden="true" id="sidebar" class="sideBar">
+        <div hidden="true" id="sidebar" class="sideBar" style="z-index: 2;">
             <div style="border-bottom: 2px solid; color: white;" onclick="closeSide()">
                 <img src="images/menu.png" alt="Close" class="sideOpen">
                 <h1 class="title">Sites</h1>
@@ -27,7 +27,7 @@
             <img src="images/menu.png" alt="Open Menu" class="sideOpen" onclick="openSide()" id="openSide">
         </div>
 
-        <div class="center" >
+        <div class="center" style="z-index: 1;">
             <button id="button" class="button" type="button" onclick="clickMe()">Click Me</button>
         </div>
     </body>

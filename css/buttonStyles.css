@@ -80,6 +80,7 @@ body {
     height: 100%;
     background-color: #2e2e2e;
     position: absolute;
+    box-shadow: 2px 1px 30px black;
 
     animation: openSide 0.5s 1;
 }
@@ -89,6 +90,7 @@ body {
     height: 100%;
     background-color: #2e2e2e;
     position: absolute;
+    box-shadow: 2px 1px 30px black;
     
     animation: closeSide 0.5s 1;
 }

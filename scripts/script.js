@@ -30,7 +30,7 @@ function closeSide() {
         document.getElementById("sidebar").hidden = true;
         document.getElementById("openSide").hidden = false;
         document.getElementById("sidebar").className = "sideBar";
-    }, 490);
+    }, 470);
 }
 
 function goto(url) {
